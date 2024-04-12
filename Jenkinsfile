@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("STAGE 1 checkout the git code"){
             steps{
-               
+                git credentialsId: 'Github', url: 'https://github.com/Greeshu07/fds.git'
             }
         }
     }
